@@ -551,7 +551,7 @@ function goTo(id){
 const tpData=[
   {num:'01',titre:'Déploiement et sécurisation d\'un AD avec mise en place de GPO',tags:['Windows Server','Active Directory','GPO'],desc:'Déploiement d\'un contrôleur de domaine Active Directory, création d\'unités organisationnelles, d\'utilisateurs et de groupes, puis sécurisation de l\'environnement via des stratégies de groupe (GPO).',comps:['Gérer le patrimoine informatique','Mettre à disposition des utilisateurs un service informatique'],pdf:'AD_GPO.pdf'},
 
-{num:'02',titre:'Routage sur VLANs et jonction d\'AD',tags:['Réseau','VLAN','Active Directory'],desc:'Mise en place du routage inter-VLAN et configuration d\'une jonction entre domaines Active Directory pour permettre la communication entre plusieurs environnements cloisonnés.',comps:['Gérer le patrimoine informatique','Mettre à disposition des utilisateurs un service informatique'],pdf:'AD_enfant.pdf'},
+{num:'02',titre:'Routage sur VLANs et jonction d\'AD',tags:['Réseau','VLAN','Active Directory'],desc:'Mise en place du routage inter-VLAN et configuration d\'une jonction entre domaines Active Directory pour permettre la communication entre plusieurs environnements cloisonnés.',comps:['Gérer le patrimoine informatique'],pdf:'AD_enfant.pdf'},
 
 {num:'03',titre:'Mise en place de CheckMk',tags:['Supervision','Monitoring','SNMP'],desc:'Installation et configuration de la solution de supervision CheckMk pour surveiller des hôtes, des services et générer des alertes.',comps:['Gérer le patrimoine informatique'],pdf:'Checkmk.pdf'},
 
@@ -559,25 +559,25 @@ const tpData=[
 
 {num:'05',titre:'Mise en place d\'un DHCP et d\'un serveur DNS faisant autorité sur sa zone',tags:['Réseau','DNS','Linux'],desc:'Configuration d\'un DHCP dans mon LAN et d\'un serveur DNS faisant autorité sur sa zone capable de redigier les requêtes vers le serveur du professeur. Blocage de certains domaines externes.',comps:['Gérer le patrimoine informatique','Mettre à disposition des utilisateurs un service informatique'],pdf:'DNS.pdf'},
 
-{num:'06',titre:'Installation de GLPI',tags:['Helpdesk','Linux'],desc:'Déploiement de GLPI pour la gestion des tickets, des actifs et du parc informatique.',comps:['Gérer le patrimoine informatique','Répondre aux incidents et aux demandes d\'assistance et d\'évolution'],pdf:'GLPI.pdf'},
+{num:'06',titre:'Installation de GLPI',tags:['Helpdesk','Linux'],desc:'Déploiement de GLPI pour la gestion des tickets, des actifs et du parc informatique.',comps:['Gérer le patrimoine informatique','Mettre à disposition des utilisateurs un service informatique','Répondre aux incidents et aux demandes d\'assistance et d\'évolution'],pdf:'GLPI.pdf'},
 
 {num:'07',titre:'Déploiement d\'une IA locale',tags:['Intelligence Artificielle'],desc:'Mise en place d\'un modèle de langage (LLM) fonctionnant en local, sans connexion cloud.',comps:['Mettre à disposition des utilisateurs un service informatique'],pdf:'IA_locale.pdf'},
 
 {num:'08',titre:'Tests de cybersécurité avec Kali Linux',tags:['Cybersécurité','Kali Linux','Pentest'],desc:'Utilisation de Kali Linux pour réaliser des tests de pénétration en grande partie sur la machine virtuelle Metaspoitable.',comps:['Gérer le patrimoine informatique'],pdf:'Kali.pdf'},
 
-{num:'09',titre:'Mise en place d\'un LDAP',tags:['LDAP','Annuaire','Linux'],desc:'Installation et configuration d\'un serveur OpenLDAP pour centraliser l\'authentification et la gestion des utilisateurs.',comps:['Gérer le patrimoine informatique','Mettre à disposition des utilisateurs un service informatique'],pdf:'LDAP.pdf'},
+{num:'09',titre:'Mise en place d\'un LDAP',tags:['LDAP','Annuaire','Linux'],desc:'Installation et configuration d\'un serveur OpenLDAP pour centraliser l\'authentification et la gestion des utilisateurs.',comps:['Gérer le patrimoine informatique'],pdf:'LDAP.pdf'},
 
 {num:'10',titre:'Mise en place d\'un NAS',tags:['Stockage','NAS','Réseau'],desc:'Déploiement d\'un serveur NAS pour le stockage réseau centralisé. Configuration des partages, des droits d\'accès et des mécanismes de sauvegarde.',comps:['Gérer le patrimoine informatique','Mettre à disposition des utilisateurs un service informatique'],pdf:'NAS.pdf'},
 
 {num:'11',titre:'Installation de Nextcloud',tags:['Nextcloud','Cloud','Linux'],desc:'Déploiement d\'une instance Nextcloud pour un service de stockage et de partage de fichiers en auto-hébergement. Configuration du serveur web, de la base de données et des utilisateurs.',comps:['Gérer le patrimoine informatique','Mettre à disposition des utilisateurs un service informatique'],pdf:'NextCloud.pdf'},
 
-{num:'12',titre:'Mise en place d\'un pare-feu à l\'entrée d\'un LAN',tags:['Sécurité','Firewall','Réseau'],desc:'Installation et configuration d\'un pare-feu iptables pour protéger un réseau LAN.',comps:['Gérer le patrimoine informatique','Mettre à disposition des utilisateurs un service informatique'],pdf:'parefeu.pdf'},
+{num:'12',titre:'Mise en place d\'un pare-feu à l\'entrée d\'un LAN',tags:['Sécurité','Firewall','Réseau'],desc:'Installation et configuration d\'un pare-feu iptables pour protéger un réseau LAN.',comps:['Gérer le patrimoine informatique'],pdf:'parefeu.pdf'},
 
-{num:'13',titre:'Déploiement d\'un serveur mail en intranet',tags:['Messagerie','Linux'],desc:'Installation d\'un serveur de messagerie en environnement intranet : configuration des protocoles SMTP, IMAP et POP3 grâce à Postfix et Dovecot.',comps:['Répondre aux incidents et aux demandes d\'assistance et d\'évolution','Mettre à disposition des utilisateurs un service informatique'],pdf:'Serv-mail.pdf'},
+{num:'13',titre:'Déploiement d\'un serveur mail en intranet',tags:['Messagerie','Linux'],desc:'Installation d\'un serveur de messagerie en environnement intranet : configuration des protocoles SMTP, IMAP et POP3 grâce à Postfix et Dovecot.',comps:['Mettre à disposition des utilisateurs un service informatique'],pdf:'Serv-mail.pdf'},
 
-{num:'14',titre:'Mise en place de Zabbix',tags:['Supervision','Zabbix','Linux'],desc:'Déploiement de la plateforme Zabbix pour surveiller des hôtes.',comps:['Gérer le patrimoine informatique','Mettre à disposition des utilisateurs un service informatique'],pdf:'Zabbix.pdf'},
+{num:'14',titre:'Mise en place de Zabbix',tags:['Supervision','Zabbix','Linux'],desc:'Déploiement de la plateforme Zabbix pour surveiller des hôtes.',comps:['Gérer le patrimoine informatique'],pdf:'Zabbix.pdf'},
 
-{num:'15',titre:'Configuration SSH',tags:['Linux','SSH','Sécurité'],desc:'Mise en place et sécurisation du service SSH.',comps:['Gérer le patrimoine informatique','Mettre à disposition des utilisateurs un service informatique'],pdf:'SSH.pdf'}
+{num:'15',titre:'Configuration SSH',tags:['Linux','SSH','Sécurité'],desc:'Mise en place et sécurisation du service SSH.',comps:['Gérer le patrimoine informatique'],pdf:'SSH.pdf'}
 ];
 const list=document.getElementById('tp-list');
 tpData.forEach(tp=>{
